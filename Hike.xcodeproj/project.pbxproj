@@ -15,6 +15,7 @@
 		0635A1422A70B8390006A179 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1412A70B8390006A179 /* CustomBackgroundView.swift */; };
 		0635A1452A70B9900006A179 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1442A70B9900006A179 /* ColorExtension.swift */; };
 		0635A1472A70BF160006A179 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1462A70BF160006A179 /* CustomButtonView.swift */; };
+		0635A1492A70C89F0006A179 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1482A70C89F0006A179 /* GradientButtonStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0635A1412A70B8390006A179 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
 		0635A1442A70B9900006A179 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		0635A1462A70BF160006A179 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
+		0635A1482A70C89F0006A179 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				0635A1442A70B9900006A179 /* ColorExtension.swift */,
+				0635A1482A70C89F0006A179 /* GradientButtonStyle.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				0635A13F2A70B76C0006A179 /* CardView.swift in Sources */,
 				0635A1312A70B5640006A179 /* HikeApp.swift in Sources */,
 				0635A1472A70BF160006A179 /* CustomButtonView.swift in Sources */,
+				0635A1492A70C89F0006A179 /* GradientButtonStyle.swift in Sources */,
 				0635A1422A70B8390006A179 /* CustomBackgroundView.swift in Sources */,
 				0635A1452A70B9900006A179 /* ColorExtension.swift in Sources */,
 			);
