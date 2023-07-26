@@ -11,6 +11,10 @@
 		0635A1332A70B5640006A179 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1322A70B5640006A179 /* ContentView.swift */; };
 		0635A1352A70B5650006A179 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0635A1342A70B5650006A179 /* Assets.xcassets */; };
 		0635A1382A70B5650006A179 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0635A1372A70B5650006A179 /* Preview Assets.xcassets */; };
+		0635A13F2A70B76C0006A179 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A13E2A70B76C0006A179 /* CardView.swift */; };
+		0635A1422A70B8390006A179 /* CustomBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1412A70B8390006A179 /* CustomBackgroundView.swift */; };
+		0635A1452A70B9900006A179 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1442A70B9900006A179 /* ColorExtension.swift */; };
+		0635A1472A70BF160006A179 /* CustomButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0635A1462A70BF160006A179 /* CustomButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		0635A1322A70B5640006A179 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0635A1342A70B5650006A179 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0635A1372A70B5650006A179 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0635A13E2A70B76C0006A179 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		0635A1412A70B8390006A179 /* CustomBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackgroundView.swift; sourceTree = "<group>"; };
+		0635A1442A70B9900006A179 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		0635A1462A70BF160006A179 /* CustomButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +59,10 @@
 		0635A12F2A70B5640006A179 /* Hike */ = {
 			isa = PBXGroup;
 			children = (
+				0635A1432A70B9730006A179 /* Utility */,
 				0635A1302A70B5640006A179 /* HikeApp.swift */,
 				0635A1322A70B5640006A179 /* ContentView.swift */,
+				0635A1402A70B8270006A179 /* Component */,
 				0635A1342A70B5650006A179 /* Assets.xcassets */,
 				0635A1362A70B5650006A179 /* Preview Content */,
 			);
@@ -65,6 +75,24 @@
 				0635A1372A70B5650006A179 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0635A1402A70B8270006A179 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				0635A13E2A70B76C0006A179 /* CardView.swift */,
+				0635A1412A70B8390006A179 /* CustomBackgroundView.swift */,
+				0635A1462A70BF160006A179 /* CustomButtonView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		0635A1432A70B9730006A179 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				0635A1442A70B9900006A179 /* ColorExtension.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0635A1332A70B5640006A179 /* ContentView.swift in Sources */,
+				0635A13F2A70B76C0006A179 /* CardView.swift in Sources */,
 				0635A1312A70B5640006A179 /* HikeApp.swift in Sources */,
+				0635A1472A70BF160006A179 /* CustomButtonView.swift in Sources */,
+				0635A1422A70B8390006A179 /* CustomBackgroundView.swift in Sources */,
+				0635A1452A70B9900006A179 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
