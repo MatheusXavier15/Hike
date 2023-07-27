@@ -8,6 +8,18 @@
 import SwiftUI
 
 struct SettingsView: View {
+    // MARK: - PROPERTIES
+    
+    private let alternateAppIcons: [String] = [
+        "AppIcon-MagnifyingGlass",
+        "AppIcon-Camera",
+        "AppIcon-Mushroom",
+        "AppIcon-Backpack",
+        "AppIcon-Map",
+        "AppIcon-Campfire"
+    ]
+    
+    
     var body: some View {
         List {
             // MARK: - SECTION: HEADER
@@ -60,6 +72,43 @@ struct SettingsView: View {
             .listRowSeparator(.hidden)
             
             // MARK: - SECTION: ICONS
+            
+            Section(
+                header: Text("ALTERNATIVE ICONS")
+            ) {
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 12) {
+                        ForEach(alternateAppIcons.indices, id: \.self) { item in
+                            Button {
+                                UIApplication.shared.setAlternateIconName(alternateAppIcons[item]){ error in
+                                    
+                                    if error != nil {
+                                        print("Failed while updating app's icon")
+                                    } else {
+                                        
+                                    }
+                                    
+                                }
+                            } label :{
+                                Image("\(alternateAppIcons[item])-Preview")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 80, height: 80)
+                                    .cornerRadius(16)
+                            }
+                        .buttonStyle(.borderless)
+                        }
+                    }
+                }.padding(.top, 12)
+                
+                Text("Choose your favourite app icon from the collection above.")
+                    .frame(minWidth: 0, maxWidth: .infinity)
+                    .multilineTextAlignment(.center)
+                    .foregroundColor(.secondary)
+                    .font(.footnote)
+                    .padding(.bottom, 12)
+                
+            }.listRowSeparator(.hidden)
             
             // MARK: - SECTION: ABOUT
             
